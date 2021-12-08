@@ -1,0 +1,43 @@
+﻿@page "{id}"
+@model Blog.Pages.DopInfoModel
+@{
+}
+<div id="carouselExampleIndicators" style="width: 100%" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div>
+                <h2 style="font-family: 'Malgun Gothic'; color: red; position: absolute; left: 20px; bottom: 10px; display: block; ">
+            
+                </h2>
+                <video autoplay muted loop style=" position: relative; display: block; width: 100%; height: 400px; background-position: center; background-size: cover; display: block;">
+                    <source src="@Model.DisplayArticle.Video_url" type="video/mp4" />
+                </video>
+                <div style="margin-top: -100px;">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev prev_icon_carusel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="card_flex_container">
+    <div class="Porsche_cart_dop_ionfo_page" style="background-image: url('@Model.DisplayArticle.Img_url')">
+            
+    </div>
+    <div class="d-flex flex-row flex-wrap" style="width: 90%; margin: 0 auto">
+        <span>@Model.DisplayArticle.Body_text</span>
+    </div>
+</div>
